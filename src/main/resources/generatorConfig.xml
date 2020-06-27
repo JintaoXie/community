@@ -41,6 +41,9 @@
         <table tableName="question" domainObjectName="Question">
             <property name = "virtualKeyColumns " value ="id"/>
         </table>
+        <table tableName="comment" domainObjectName="Comment">
+            <property name = "virtualKeyColumns " value ="id"/>
+        </table>
 
     </context>
 </generatorConfiguration>

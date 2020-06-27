@@ -1,8 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.QuestionDTO;
-import com.example.demo.mapper.QuestionMapper;
-import com.example.demo.model.Question;
+import com.example.demo.mapper.QuestionExtMapper;
 import com.example.demo.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +19,7 @@ public class QuestionController {
     public String question(@PathVariable(name = "id") Long id,
                            Model model){
         QuestionDTO questionDTO = questionService.getById(id);
+        questionService.incView(id);
         model.addAttribute("question", questionDTO);
         return "question";
     }
