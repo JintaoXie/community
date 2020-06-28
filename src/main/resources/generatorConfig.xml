@@ -44,6 +44,9 @@
         <table tableName="comment" domainObjectName="Comment">
             <property name = "virtualKeyColumns " value ="id"/>
         </table>
+        <table tableName="notification" domainObjectName="Notification">
+            <property name = "virtualKeyColumns " value ="id"/>
+        </table>
 
     </context>
 </generatorConfiguration>

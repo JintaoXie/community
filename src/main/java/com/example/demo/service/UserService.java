@@ -14,9 +14,6 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    @Autowired
-    private QuestionMapper questionMapper;
-
 
     public void createOrUpdate(User user) {
         UserExample userExample = new UserExample();
