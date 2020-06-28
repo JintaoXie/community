@@ -9,20 +9,3 @@
 <br>[OkHttp](https://square.github.io/okhttp/)
 <br>[SPringBoot Features SQL](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-sql.html)
 <br>[Mybatis SpringBoot Autoconfigure](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)
-
-## 工具
-<br>git
-<br>[Visual Paradigm](www.visual-paradigm.com)
-
-## 脚本
-```mysql-sql
-CREATE TABLE user
-(
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	account_id varchar(100),
-	name VARCHAR(50),
-	token CHAR(36),
-	gmt_create BIGINT,
-	gmt_modified BIGINT
-);
-```
